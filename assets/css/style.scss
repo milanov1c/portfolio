@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+@import "var.scss";
+
+body{
+    background-color: $darkGrey;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:$beige;
+    
+}
+a:hover{
+    color: $red;
+    transition: all 400ms;
+}
+ul{
+    list-style-type: none;
+}
+
+
+//mixin
+@mixin center{
+    width: 80%;
+    margin: 0px auto;
+}
+@mixin dFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin linkBorder{
+    border-bottom: 1px solid $red;
+}
+@mixin imgBorderRight{
+    position: absolute;
+    content: '';
+     bottom: -15px;
+     right: -15px;
+     width: 20%;
+     height: 30%;
+    border-right: 5px solid $red;
+    border-bottom: 5px solid $red;
+}
+@mixin imgBorderLeft{
+    position: absolute;
+    content: '';
+    top: -15px;
+    left: -15px;
+    width: 20%;
+    height: 30%;
+    border-left: 5px solid $red;
+    border-top:5px solid $red;
+}
+@mixin headings{
+    font-size: 50px;
+    font-weight: 200;
+    padding: 20px 0px;
+    letter-spacing: 7px;
+}
+@mixin headingsBorder{
+    content: "";
+    display: block;
+    width: 10%;
+    height: 5px;
+    margin: 0px auto;
+    background-color: $red;
+}
+//mixin end
+
+//layout
+.red{
+    color:$red;
+}
+.shadow{
+    height: inherit;
+    width: 100%;
+    position: relative;
+    background-color: rgba($color: $black, $alpha: 0.7);
+}
+.centerBlock{
+    width: 80%;
+    margin: 0px auto;
+}
+.dFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.arrow {
+    position: absolute;
+    left:50%;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    height: auto;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    i{
+        font-size: 70px;
+        color:$red;
+        text-shadow: 0px 0px 25px $red;
+    }
+}
+.container{
+    height: 550px;
+    width: 55%;
+    margin: 0px auto;
+}
+//layout end
+//id
+#header{
+    width: 80%;
+    height: 90px;
+    @include dFlex;
+    left:10%;
+    justify-content:$sb;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    #logo{
+        width: 35%;
+        img{
+            width: 50%;
+        }
+    }
+    
+    #nav{
+        width: 50%;
+        ul{
+            text-align: right;
+        }
+        ul li{
+            display: inline;
+            padding: 0px 7px;
+            font-size: 22px;
+            text-transform: uppercase;
+            @include linkBorder;
+        }
+        
+    }
+}
+#cover{
+    height: 750px;
+    width: 100%;
+    background-image: url("../img/cover.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color:$beige;
+    text-align: center;
+    h1{
+        padding-top:250px;
+        font-size: 50px;
+        font-weight: normal;
+    }
+    h2{
+        padding-top:10px;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 5px;
+    }
+    clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,0 85%);
+}
+#about{
+    height: 780px;
+    text-align: center;
+    color:$beige;
+    padding: 70px 0px;
+    background-color: $darkGrey;
+   .wrapper{
+       @include center;
+       height: 700px;
+       padding: 30px 0px;
+       background-color: $greyBg;
+       h2{
+        @include headings;
+        &::before{
+            @include headingsBorder(); 
+         }
+         }
+        .aboutText1{
+        font-size: 18px;
+        padding: 0px 100px;
+        line-height: 1.4;
+        }
+        .aboutText2{
+            display: none;
+        }
+        .container{
+            justify-content: space-between;
+            align-items: center;
+            #authorImg{
+                width: 35%;
+                display: flex;
+                justify-content: end;
+                figure {
+                    position: relative;
+                    &::before{
+                        
+                        @include imgBorderLeft();
+                    }
+                    &::after{
+                        
+                        @include imgBorderRight();
+                    }
+                    img{
+                    width: 100%;
+                }
+            }
+                
+            }
+            #aboutAuthor{
+                width: 55%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                p,h2{
+                    text-align: left;
+                }
+                p{
+                    font-size: 22px;
+                }
+                .red{
+                    font-size: 26px;
+                    font-weight: bold;
+                    line-height: 2;
+                    text-decoration: line-through;
+                    font-style: italic;
+                }
+                
+            }
+         }
+   }
+   
+   
+    
+    
+   }
+#skills{
+    height: 700px;
+    background-color: $greyBg;
+    text-align: center;
+    color: $beige;
+    .wrapper{
+        @include center;
+        height: 650px;
+        h2{
+            @include headings();
+            &::before{
+               @include headingsBorder(); 
+            }
+        }
+      .skillsText{
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    }
+}
+
+//id end

@@ -1,0 +1,316 @@
+@import "var.scss";
+@media screen and (max-width: 1441px){
+    #header{
+        #nav{
+            width: 45%;
+        }
+        #nav ul li{
+            font-size: 22px;
+            padding: 0px 7px;
+        }
+    }
+   #cover{
+       height: 600px;
+   }
+}
+@media screen and (max-width: 1025px){
+    #header{
+        #logo{
+            width: 47%;
+        }
+        #nav{
+            width: 50%;
+        }
+        #nav ul li{
+            font-size: 18px;
+            padding: 0px 4px;
+        }
+    }
+    #cover{
+        height: 450px;
+        h1{
+            padding-top:200px;
+            font-size: 40px;
+        }
+        h2{
+            font-size:20px;
+            letter-spacing: 2px;
+        }
+    }
+    #about{
+        .wrapper{
+            width: 90%;
+            margin: 0px auto;
+            .container{
+                width: 70%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 921px){
+    #header{
+        #nav ul li{
+            font-size: 17px;
+        }
+    }
+    #about{
+        .wrapper{
+            height: 730px;
+            h2{
+                font-size: 47px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px){
+    #header{
+        width: 90%;
+        left:5%;
+        #logo img{
+            width: 47%;
+        }
+        #nav{
+            width: 50%;
+        }
+        #nav ul li{
+            font-size: 16px;
+            padding: 0px 3px;
+        }
+    }
+    #cover{
+        height: 400px;
+        h1{
+            padding-top:150px;
+            font-size: 36px;
+        }
+        h2{
+            font-size: 18px;
+        }
+    }
+    #about{
+        height: 650px;
+        .wrapper{
+            height: 600px;
+            padding: 20px 0px;
+            h2{
+                font-size: 45px;
+                padding: 15px 0px;
+            }
+            p{
+                font-size: 16px;
+                padding: 0px 50px;
+                line-height: 1.2;
+            }
+            .container{
+                height: 400px;
+                width: 60%;
+                #authorImg{
+                    width: 40%;
+                    
+                }
+                #aboutAuthor{
+                    
+                    p{
+                        
+                        font-size: 16px;
+                        margin-left: -20%;
+                    }
+                    .red{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 601px){
+    #header{
+        top:3%;
+        justify-content: center;
+        #logo img{
+            width: 100%;
+        }
+        #nav{
+            width: 100%;
+        }
+        #nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        #nav ul li{
+            font-size: 20px;
+            padding: 0px 7px;
+        }
+    }
+    #about{
+        .wrapper{
+            width: 85%;
+            h2{
+                font-size: 40px;
+            }
+            .aboutText1{
+                display: none;
+            }
+            .aboutText2{
+                display: block;
+                font-size: 14px;
+                padding: 0px 40px;
+                line-height: 1.3;
+            }
+            .container{
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 481px){
+   #cover{
+       h1{
+           font-size: 34px;
+       }
+       h2{
+           padding:10px;
+           font-size: 18px;
+       }
+   }
+   #about{
+     
+    .wrapper{
+        width: 90%;
+        h2{
+            font-size: 36px;
+        }
+       
+        .aboutText2{
+            font-size: 14px;
+            padding: 0px 40px;
+            line-height: 1.2;
+        }
+        .container{
+            width: 90%;
+        }
+    }
+} 
+}
+@media screen and (max-width: 426px){
+    #header{
+        width: 100%;
+        padding: 3% 3%;
+        position: relative;
+        left:0%;
+        background-color: $darkGrey;
+        #nav{
+            width: 100%;
+        }
+        #nav ul li{
+            font-size: 18px;
+            padding: 0px 4px;
+        }
+    }
+    #cover{
+        height: 300px;
+        background-image: none;
+        background-color: $darkGrey;
+        h1{
+            font-size: 28px;
+            padding-top:75px;
+        }
+        h2{
+            font-size: 14px;
+            //padding:15px 60px;
+        }
+    }
+    #about{
+     
+        .wrapper{
+            width: 95%;
+            h2{
+                font-size: 34px;
+            }
+           
+            .aboutText2{
+                font-size: 14px;
+                padding: 0px 20px;
+                line-height: 1;
+            }
+            .container{
+                width: 95%;
+                
+            }
+        }
+    } 
+}
+@media screen and (max-width: 321px){
+    #header{
+        padding: 3% 3% 0% 3%;
+        justify-content: center;
+        height: auto;
+        #logo img{
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        #nav{
+            width: 60%;
+        }
+        #nav ul{
+            display: flex;
+            flex-direction:column;
+        }
+        #nav ul li{
+            text-align: center;
+            font-size: 16px;
+            padding: 2px 7px;
+        }
+    }
+    #cover{
+        h1{
+            font-size: 24px;
+        }
+        h2{
+            font-size: 12px;
+        }
+    }
+    #about{
+        height: 1000px;
+        .wrapper{
+            height: 900px;
+            width: 95%;
+            h2{
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+           
+            .aboutText2{
+                font-size: 14px;
+                padding: 0px 20px;
+            }
+            .container{
+                margin: 30px auto;
+                width: 95%;
+                #aboutAuthor{
+                    width: 80%;
+                    margin: 0px auto;
+                    display: block;
+                    order: 1;
+                    p{
+                        text-align: left;
+                    }
+                    .red{
+                        text-align: left;
+                    }
+                    p:last-child{
+                        padding-bottom: 30px;
+                        
+                    }
+                }
+                #authorImg{
+                    width: 80%;
+                    margin: 0px auto;
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    } 
+}
