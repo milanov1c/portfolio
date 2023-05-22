@@ -274,7 +274,7 @@ ul {
 }
 
 #skills {
-  height: 700px;
+  height: 600px;
   background-color: #141414;
   text-align: center;
   color: #EEEEEE;
@@ -283,7 +283,9 @@ ul {
 #skills .wrapper {
   width: 80%;
   margin: 0px auto;
-  height: 650px;
+  height: 450px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #skills .wrapper h2 {
@@ -305,5 +307,50 @@ ul {
 #skills .wrapper .skillsText {
   font-size: 18px;
   line-height: 1.4;
+}
+
+#skills .wrapper .container {
+  height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#skills .wrapper .container .skillBar {
+  margin-top: 30px;
+  height: 30px;
+  text-align: left;
+  background: #d72323;
+  -webkit-clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#D72323), to(transparent));
+  background: linear-gradient(90deg, #D72323 0%, transparent 100%);
+  padding-left: 15px;
+  position: relative;
+}
+
+#skills .wrapper .container .skillBar .skillIcon {
+  position: absolute;
+  font-size: 36px;
+}
+
+#skills .wrapper .container #skill1 {
+  width: 90%;
+}
+
+#skills .wrapper .container #skill2 {
+  width: 90%;
+}
+
+#skills .wrapper .container #skill3 {
+  width: 60%;
+}
+
+#skills .wrapper .container #skill4 {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

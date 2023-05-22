@@ -243,13 +243,14 @@ ul{
     
    }
 #skills{
-    height: 700px;
+    height: 600px;
     background-color: $greyBg;
     text-align: center;
     color: $beige;
     .wrapper{
         @include center;
-        height: 650px;
+        height: 450px;
+        align-content: center;
         h2{
             @include headings();
             &::before{
@@ -260,6 +261,40 @@ ul{
         font-size: 18px;
         line-height: 1.4;
       }
+      .container{
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .skillBar{
+            margin-top: 30px;
+            height: 30px;
+            text-align: left;
+            background: rgb(215,35,35);
+            clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+            background: linear-gradient(90deg, $red 0%,transparent 100%);
+            padding-left: 15px;
+            position: relative;
+            .skillIcon {
+                position:absolute;
+                font-size: 36px;
+            }
+        }
+        
+        
+        #skill1{
+            width: 90%;
+        }
+        #skill2{
+            width: 90%;
+        }
+        #skill3{
+            width: 60%;
+        }
+        #skill4{
+            width: 50%;
+        }
+      }
+      
     }
 }
 
