@@ -46,6 +46,11 @@
             }
         }
     }
+    #skills{
+        .wrapper{
+            width: 90%;
+        }
+    }
 }
 @media screen and (max-width: 921px){
     #header{
@@ -58,6 +63,19 @@
             height: 730px;
             h2{
                 font-size: 47px;
+            }
+        }
+    }
+    #skills{
+        .wrapper{
+            h2{
+                font-size: 47px;
+            }
+            .container{
+                .skillBar{
+                    height: 35px;
+                    font-size: 25px;
+                }
             }
         }
     }
@@ -122,6 +140,17 @@
             }
         }
     }
+    #skills{
+        .wrapper{
+            width: 95%;
+            h2{
+                font-size: 45px;
+            }
+            .container{
+                width: 95%;
+            }
+        }
+    }
 }
 @media screen and (max-width: 601px){
     #header{
@@ -162,6 +191,13 @@
             }
         }
     }
+    #skills{
+        .wrapper{
+            .skillsText2{
+                display: none;
+            }
+        }
+    }
 }
 @media screen and (max-width: 481px){
    #cover{
@@ -178,7 +214,7 @@
     .wrapper{
         width: 90%;
         h2{
-            font-size: 36px;
+            font-size: 32px;
         }
        
         .aboutText2{
@@ -189,8 +225,32 @@
         .container{
             width: 90%;
         }
-    }
-} 
+        }
+    } 
+    #skills{
+        height: 550px;
+        .wrapper{
+            height: 500px;
+            width: 90%;
+            h2{
+                font-size: 32px;
+            }
+            .skillsText1{
+                font-size: 14px;
+                padding: 0px 40px;
+                line-height: 1.2;
+            }
+            .container{
+                height: 300px;
+                display: block;
+                .skillBar{
+                    height: 30px;
+                    font-size: 20px;
+                    padding-left: 30px;
+                }
+            }
+        }
+}
 }
 @media screen and (max-width: 426px){
     #header{
@@ -239,8 +299,26 @@
             }
         }
     } 
+    #skills{
+        height: 480px;
+        .wrapper{
+            height: 430px;
+            h2{
+                letter-spacing: 4px;
+            }
+            .skillsText1{
+                padding: 0px 20px;
+            }
+            .container{
+                height: 250px;
+                .skillBar{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }
-@media screen and (max-width: 321px){
+@media screen and (max-width: 376px){
     #header{
         padding: 3% 3% 0% 3%;
         justify-content: center;
@@ -273,7 +351,7 @@
     #about{
         height: 1000px;
         .wrapper{
-            height: 900px;
+            height: 850px;
             width: 95%;
             h2{
                 font-size: 30px;
@@ -286,10 +364,10 @@
             }
             .container{
                 margin: 30px auto;
-                width: 95%;
+                width: 70%;
                 #aboutAuthor{
                     width: 80%;
-                    margin: 0px auto;
+                    margin: 35px auto;
                     display: block;
                     order: 1;
                     p{
@@ -313,4 +391,68 @@
             }
         }
     } 
+    #skills{
+        .wrapper{
+            h2{
+                letter-spacing: 2px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 321px){
+    
+    #about{
+        height: 1000px;
+        .wrapper{
+            height: 750px;
+            width: 95%;
+            h2{
+                font-size: 28px;
+                letter-spacing: 2px;
+            }
+           
+            .aboutText2{
+                font-size: 13px;
+                padding: 0px 15px;
+            }
+            .container{
+                margin: 30px auto;
+                width: 70%;
+                #aboutAuthor{
+                    width: 90%;
+                    margin: 15px auto;
+                    display: block;
+                    order: 1;
+                    p{
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                    .red{
+                        font-size: 18px;
+                        text-align: left;
+                    }
+                    p:last-child{
+                        padding-bottom: 30px;
+                        
+                    }
+                }
+                #authorImg{
+                    width: 80%;
+                    margin: 10px auto;
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    } 
+    #skills{
+        .wrapper{
+            h2{
+                letter-spacing: 2px;
+                font-size: 28px;
+            }
+        }
+    }
 }

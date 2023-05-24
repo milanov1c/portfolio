@@ -243,8 +243,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -274,7 +272,7 @@ ul {
 }
 
 #skills {
-  height: 600px;
+  height: 650px;
   background-color: #141414;
   text-align: center;
   color: #EEEEEE;
@@ -283,9 +281,10 @@ ul {
 #skills .wrapper {
   width: 80%;
   margin: 0px auto;
-  height: 450px;
+  height: 600px;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 30px 0px;
 }
 
 #skills .wrapper h2 {
@@ -304,13 +303,14 @@ ul {
   background-color: #D72323;
 }
 
-#skills .wrapper .skillsText {
+#skills .wrapper .skillsText1, #skills .wrapper .skillsText2 {
   font-size: 18px;
   line-height: 1.4;
 }
 
 #skills .wrapper .container {
-  height: 300px;
+  height: 400px;
+  width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -321,36 +321,40 @@ ul {
 }
 
 #skills .wrapper .container .skillBar {
-  margin-top: 30px;
-  height: 30px;
+  --font-size: 30px;
+  --height: 40px;
+  height: var(--height);
+  font-size: var(--font-size);
+  padding-top: calc((var(--height) - var(--font-size)) / 2);
+  margin-top: 40px;
   text-align: left;
+  padding-left: 75px;
   background: #d72323;
-  -webkit-clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#D72323), to(transparent));
-  background: linear-gradient(90deg, #D72323 0%, transparent 100%);
-  padding-left: 15px;
-  position: relative;
-}
-
-#skills .wrapper .container .skillBar .skillIcon {
-  position: absolute;
-  font-size: 36px;
+  background: -webkit-gradient(linear, left top, right top, from(#D72323), color-stop(51%, #D72323), to(transparent));
+  background: linear-gradient(90deg, #D72323 0%, #D72323 51%, transparent 100%);
 }
 
 #skills .wrapper .container #skill1 {
   width: 90%;
+  -webkit-clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #skills .wrapper .container #skill2 {
-  width: 90%;
+  width: 80%;
+  -webkit-clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #skills .wrapper .container #skill3 {
-  width: 60%;
+  width: 70%;
+  -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #skills .wrapper .container #skill4 {
-  width: 50%;
+  width: 60%;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 /*# sourceMappingURL=style.css.map */
