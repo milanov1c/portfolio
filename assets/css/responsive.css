@@ -43,14 +43,17 @@
   #skills .wrapper {
     width: 90%;
   }
+  #offers .wrapper {
+    width: 90%;
+  }
+  #offers .wrapper .container {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 921px) {
   #header #nav ul li {
-    font-size: 17px;
-  }
-  #about .wrapper {
-    height: 730px;
+    font-size: 16px;
   }
   #about .wrapper h2 {
     font-size: 47px;
@@ -61,6 +64,12 @@
   #skills .wrapper .container .skillBar {
     height: 35px;
     font-size: 25px;
+  }
+  #offers .wrapper h2 {
+    font-size: 47px;
+  }
+  #offers .wrapper .container .offer {
+    margin-top: 70px;
   }
 }
 
@@ -76,11 +85,8 @@
     width: 50%;
   }
   #header #nav ul li {
-    font-size: 16px;
+    font-size: 15px;
     padding: 0px 3px;
-  }
-  #cover {
-    height: 400px;
   }
   #cover h1 {
     padding-top: 150px;
@@ -89,11 +95,7 @@
   #cover h2 {
     font-size: 18px;
   }
-  #about {
-    height: 650px;
-  }
   #about .wrapper {
-    height: 600px;
     padding: 20px 0px;
   }
   #about .wrapper h2 {
@@ -106,7 +108,6 @@
     line-height: 1.2;
   }
   #about .wrapper .container {
-    height: 400px;
     width: 60%;
   }
   #about .wrapper .container #authorImg {
@@ -127,6 +128,21 @@
   }
   #skills .wrapper .container {
     width: 95%;
+  }
+  #offers .wrapper {
+    width: 95%;
+  }
+  #offers .wrapper .container {
+    width: 95%;
+  }
+  #offers .wrapper .container .offer h3 {
+    letter-spacing: 4px;
+  }
+  #offers .wrapper .container .offer .offerText1 {
+    display: none;
+  }
+  #offers .wrapper .container .offer .offerText2 {
+    display: inline;
   }
 }
 
@@ -160,6 +176,7 @@
   }
   #about .wrapper h2 {
     font-size: 40px;
+    letter-spacing: 3px;
   }
   #about .wrapper .aboutText1 {
     display: none;
@@ -173,8 +190,39 @@
   #about .wrapper .container {
     width: 80%;
   }
+  #skills .wrapper h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
   #skills .wrapper .skillsText2 {
     display: none;
+  }
+  #skills .wrapper .skillsText1 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  #offers .wrapper h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  #offers .wrapper .offersText1 {
+    display: none;
+  }
+  #offers .wrapper .offersText2 {
+    display: inline;
+  }
+  #offers .wrapper .offersText2 {
+    padding: 0px 20px;
+  }
+  #offers .wrapper .container {
+    width: 100%;
+  }
+  #offers .wrapper .container .offer {
+    width: 80%;
+    margin-top: 20px;
+  }
+  #offers .wrapper .container #firstOffer {
+    margin-top: 75px;
   }
 }
 
@@ -200,11 +248,7 @@
   #about .wrapper .container {
     width: 90%;
   }
-  #skills {
-    height: 550px;
-  }
   #skills .wrapper {
-    height: 500px;
     width: 90%;
   }
   #skills .wrapper h2 {
@@ -216,13 +260,22 @@
     line-height: 1.2;
   }
   #skills .wrapper .container {
-    height: 300px;
     display: block;
   }
   #skills .wrapper .container .skillBar {
     height: 30px;
     font-size: 20px;
     padding-left: 30px;
+  }
+  #offers .wrapper h2 {
+    font-size: 32px;
+  }
+  #offers .wrapper .offersText2 {
+    display: inline-block;
+    padding: 0px 40px;
+  }
+  #offers .wrapper .container .offer h3 {
+    font-size: 26px;
   }
 }
 
@@ -267,20 +320,11 @@
   #about .wrapper .container {
     width: 95%;
   }
-  #skills {
-    height: 480px;
-  }
-  #skills .wrapper {
-    height: 430px;
-  }
   #skills .wrapper h2 {
     letter-spacing: 4px;
   }
   #skills .wrapper .skillsText1 {
     padding: 0px 20px;
-  }
-  #skills .wrapper .container {
-    height: 250px;
   }
   #skills .wrapper .container .skillBar {
     margin-top: 20px;
@@ -315,6 +359,9 @@
     text-align: center;
     font-size: 16px;
     padding: 2px 7px;
+  }
+  #cover .shadow {
+    background-color: rgba(0, 0, 0, 0);
   }
   #cover h1 {
     font-size: 24px;
@@ -369,11 +416,15 @@
     letter-spacing: 2px;
     font-size: 30px;
   }
+  #offers .wrapper h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
 }
 
 @media screen and (max-width: 321px) {
   #about {
-    height: 1000px;
+    height: 800px;
   }
   #about .wrapper {
     height: 750px;
@@ -420,6 +471,10 @@
   #skills .wrapper h2 {
     letter-spacing: 2px;
     font-size: 28px;
+  }
+  #offers .wrapper h2 {
+    letter-spacing: 2px;
+    font-size: 26px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

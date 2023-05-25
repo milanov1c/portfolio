@@ -17,12 +17,14 @@ a{
 }
 a:hover{
     color: $red;
-    transition: all 400ms;
+    transition: 400ms ease-in-out;
 }
 ul{
     list-style-type: none;
 }
-
+h2,h3{
+    font-weight: normal;
+}
 
 //mixin
 @mixin center{
@@ -41,32 +43,33 @@ ul{
     content: '';
      bottom: -15px;
      right: -15px;
-     width: 20%;
-     height: 30%;
-    border-right: 5px solid $red;
-    border-bottom: 5px solid $red;
+     width: 30%;
+     height: 40%;
+    border-right: 3px solid $red;
+    border-bottom: 3px solid $red;
 }
 @mixin imgBorderLeft{
     position: absolute;
     content: '';
     top: -15px;
     left: -15px;
-    width: 20%;
-    height: 30%;
-    border-left: 5px solid $red;
-    border-top:5px solid $red;
+    width: 30%;
+    height: 40%;
+    border-left: 3px solid $red;
+    border-top: 3px solid $red;
 }
 @mixin headings{
     font-size: 50px;
     font-weight: 200;
     padding: 20px 0px;
+    padding-bottom: 20px;
     letter-spacing: 7px;
 }
 @mixin headingsBorder{
     content: "";
     display: block;
-    width: 10%;
-    height: 5px;
+    width: 40px;
+    height: 3px;
     margin: 0px auto;
     background-color: $red;
 }
@@ -107,7 +110,6 @@ ul{
     }
 }
 .container{
-    height: 550px;
     width: 55%;
     margin: 0px auto;
 }
@@ -167,15 +169,15 @@ ul{
     clip-path: polygon(0 0,100% 0,100% 85%,50% 100%,0 85%);
 }
 #about{
-    height: 780px;
+    //height: 800px;
     text-align: center;
     color:$beige;
-    padding: 70px 0px;
+    padding: 50px 0px;
     background-color: $darkGrey;
    .wrapper{
        @include center;
-       height: 700px;
-       padding: 30px 0px;
+       //height: 700px;
+       padding: 50px 0px;
        background-color: $greyBg;
        h2{
         @include headings;
@@ -194,6 +196,7 @@ ul{
         .container{
             justify-content: space-between;
             align-items: center;
+            padding: 50px 0px;
             #authorImg{
                 width: 35%;
                 display: flex;
@@ -243,15 +246,14 @@ ul{
     
    }
 #skills{
-    height: 650px;
+    //height: 650px;
     background-color: $greyBg;
-    text-align: center;
     color: $beige;
+    padding: 50px 0px;
     .wrapper{
         @include center;
-        height: 600px;
-        align-content: center;
-        padding: 30px 0px;
+        //height: 600px;
+        text-align: center;
         h2{
             @include headings();
             &::before{
@@ -264,7 +266,7 @@ ul{
       }
       
       .container{
-        height: 400px;
+        //height: 400px;
         width: 80%;
         flex-direction: column;
         justify-content: space-evenly;
@@ -305,5 +307,115 @@ ul{
       
     }
 }
-
+#offers{
+    text-align: center;
+    color: $beige;
+    padding: 70px 0px;
+    .wrapper{
+        @include center();
+        padding: 50px 0px;
+        background-color: $greyBg;
+        h2{
+            @include headings();
+            &::before{
+                @include headingsBorder();
+            }
+        }
+        .offersText1{
+            font-size: 18px;
+            line-height: 1.4;
+            padding: 0px 100px;
+        }
+        .offersText2{
+            display: none;
+        }
+        .container{
+            width: 80%;
+            justify-content: space-evenly;
+            .offer{
+                position: relative;
+                width: 30%;
+                //height: 250px;
+                margin-top: 100px;
+                padding: 0px 5px;
+                h3{
+                    padding: 10px 0px;
+                    font-size: 30px;
+                    color: $red;
+                    letter-spacing: 7px;
+                    text-transform: uppercase;
+                }
+                .offersIcon i{
+                    padding: 10px 0px;
+                    font-size: 25px;
+                }
+                .offerText1{
+                    font-size: 18px;
+                    line-height: 1.2;
+                }
+                .offerText2{
+                    display: none;
+                }
+            }
+            #firstOffer{
+                &::before{
+                    @include imgBorderLeft();
+                }
+            }
+            #lastOffer{
+                &::after{
+                    @include imgBorderRight();
+                }
+            }
+        }
+    }
+}
+#projects{
+    background-color: $greyBg;
+    color: $beige;
+    padding: 50px 0px;
+    .wrapper{
+        text-align: center;
+        @include center;
+        h2{
+            @include headings();
+            &::before{
+                @include headingsBorder();
+            }
+        }
+        p{
+            font-size:18px;
+            line-height: 1.4;
+            padding: 0px 100px;
+        }
+        .container{
+            padding: 50px 0px;
+            width: 90%;
+            justify-content: space-between;
+            figure{
+                width: 45%;
+                position: relative;
+                    
+                img{
+                    width: 100%;
+                    transition: 700ms ease-in-out;
+                    
+                }
+                img:hover{
+                    transform: scale(0.8);
+                    
+                }
+                figcaption{
+                    font-size: 28px;
+                    margin-top: 20px;
+                    &::before{
+                        @include headingsBorder();
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
 //id end
