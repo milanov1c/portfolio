@@ -59,6 +59,19 @@
             }
         }
     }
+    #testimonials{
+        .wrapper{
+            width: 90%;
+                .container{
+                    .testimonialBlock{
+                        img{
+                            bottom:50%;
+                        }
+                    }
+                }
+            
+        }
+    }
 }
 @media screen and (max-width: 921px){
     #header{
@@ -106,6 +119,24 @@
             }
             p{
                 padding: 0px 30px;
+            }
+        }
+    }
+    #testimonials{
+        .wrapper{
+            h2{
+                font-size: 47px;
+            }
+            .container{
+                padding: 0px;
+                .testimonialBlock{
+                    figcaption{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
@@ -223,6 +254,40 @@
             }
         }
     }
+    #testimonials{
+        .wrapper{
+            width: 95%;
+            h2{
+                font-size: 45px;
+            }
+            .container{
+                .testimonialBlock{
+                    width: 45%;
+                    img{
+                        width: 40%;
+                        bottom: 30%;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        .wrapper{
+            width: 95% !important;
+            h2{
+                font-size: 45px;
+            }
+            .container{
+                .contactInfo{
+                    justify-content: center;
+                    .infoBlock{
+                        width: 80%;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 601px){
     #header{
@@ -323,6 +388,41 @@
             }
         }
     }
+    #testimonials{
+        .wrapper{
+            h2{
+                font-size: 40px;
+                letter-spacing: 3px;
+            }
+            .container{
+                .testimonialBlock{
+                    img{
+                        bottom: 40%;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        .wrapper{
+            h2{
+                font-size: 40px;
+                letter-spacing: 3px;
+            }
+            .container{
+                .formWrapper{
+                    justify-content: center;
+                    #form{
+                        input, textarea, input[type="text"]{
+                            width: 80%;
+                            margin: 0px auto;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 481px){
    #cover{
@@ -409,6 +509,21 @@
         }
     }
 }
+#testimonials{
+    .wrapper{
+        h2{
+            font-size: 32px;
+        }
+        .container{
+            .testimonialBlock{
+                img{
+                    bottom: 50%;
+                }
+            }
+        }
+    }
+    
+}
 }   
 @media screen and (max-width: 426px){
     #header{
@@ -472,6 +587,30 @@
                 .skillBar{
                     margin-top: 20px;
                 }
+            }
+        }
+    }
+    #testimonials{
+        .wrapper{
+            h2{
+                letter-spacing: 4px;
+            }
+            .container{
+                justify-content: center;
+                .testimonialBlock{
+                    width: 80%;
+                    img{
+                        bottom: 35%;
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .wrapper{
+            justify-content: center;
+            .links ul li a{
+                padding-left: 5px;
             }
         }
     }
@@ -584,6 +723,21 @@
             }
         }
     }
+    #testimonials{
+        .wrapper{
+            h2{
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+            .container{
+                .testimonialBlock{
+                    img{
+                        bottom: 37%;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 321px){
     
@@ -670,6 +824,21 @@
             .container{
                 .projectBlock{
                     width: 85%;
+                }
+            }
+        }
+    }
+    #testimonials{
+        .wrapper{
+            h2{
+                font-size: 26px;
+                padding: 0px;
+            }
+            .container{
+                .testimonialBlock{
+                    img{
+                        bottom:45%;
+                    }
                 }
             }
         }

@@ -13,11 +13,11 @@ body {
 
 body::-webkit-scrollbar {
   width: 12px;
-  background-color: #0b090a;
+  background-color: #2a2a2a;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2a2a2a;
+  background-color: #0b090a;
 }
 
 a {
@@ -37,6 +37,10 @@ ul {
 
 h2, h3 {
   font-weight: normal;
+}
+
+.beige {
+  color: #EEEEEE;
 }
 
 .red {
@@ -336,7 +340,7 @@ h2, h3 {
   padding-top: calc((var(--height) - var(--font-size)) / 2);
   margin-top: 40px;
   text-align: left;
-  padding-left: 75px;
+  padding-left: 15px;
   background: #d72323;
   background: -webkit-gradient(linear, left top, right top, from(#D72323), color-stop(51%, #D72323), to(transparent));
   background: linear-gradient(90deg, #D72323 0%, #D72323 51%, transparent 100%);
@@ -344,26 +348,18 @@ h2, h3 {
 
 #skills .wrapper .container #skill1 {
   width: 90%;
-  -webkit-clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #skills .wrapper .container #skill2 {
   width: 80%;
-  -webkit-clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #skills .wrapper .container #skill3 {
   width: 70%;
-  -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #skills .wrapper .container #skill4 {
   width: 60%;
-  -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 #offers {
@@ -539,5 +535,226 @@ h2, h3 {
   height: 3px;
   margin: 0px auto;
   background-color: #D72323;
+}
+
+#testimonials {
+  background-color: #2a2a2a;
+  color: #EEEEEE;
+  padding: 50px 0px;
+}
+
+#testimonials .wrapper {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#testimonials .wrapper h2 {
+  font-size: 50px;
+  font-weight: 200;
+  padding: 20px 0px;
+  padding-bottom: 20px;
+  letter-spacing: 7px;
+}
+
+#testimonials .wrapper h2::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #D72323;
+}
+
+#testimonials .wrapper .container {
+  width: 100%;
+  padding: 20px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#testimonials .wrapper .container .testimonialBlock {
+  width: 22%;
+  margin-top: 100px;
+  padding: 50px 10px;
+  background-color: rgba(20, 20, 20, 0.5);
+  position: relative;
+}
+
+#testimonials .wrapper .container .testimonialBlock img {
+  width: 50%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+#testimonials .wrapper .container .testimonialBlock figcaption {
+  margin: 20px 0px;
+  font-size: 22px;
+}
+
+#testimonials .wrapper .container .testimonialBlock figcaption::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #D72323;
+}
+
+#contact {
+  background-color: #141414;
+  color: #EEEEEE;
+  padding: 50px 0px;
+}
+
+#contact .wrapper {
+  width: 80%;
+  margin: 0px auto;
+  width: 90% !important;
+  text-align: center;
+}
+
+#contact .wrapper h2 {
+  font-size: 50px;
+  font-weight: 200;
+  padding: 20px 0px;
+  padding-bottom: 20px;
+  letter-spacing: 7px;
+}
+
+#contact .wrapper h2::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0px auto;
+  background-color: #D72323;
+}
+
+#contact .wrapper .container {
+  width: 100%;
+  padding: 20px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .wrapper .container .contactInfo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .wrapper .container .contactInfo .infoBlock {
+  width: 32%;
+}
+
+#contact .wrapper .container .contactInfo .infoBlock h3 {
+  font-size: 30px;
+  color: #EEEEEE;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+#contact .wrapper .container .contactInfo .infoBlock i {
+  font-size: 40px;
+  padding-bottom: 30px;
+  color: #D72323;
+}
+
+#contact .wrapper .container .formWrapper {
+  margin-top: 50px;
+}
+
+#contact .wrapper .container .formWrapper #form {
+  width: 90%;
+  margin: 0px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .wrapper .container .formWrapper #form input, #contact .wrapper .container .formWrapper #form textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #2a2a2a;
+  margin: 10px 0px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+#contact .wrapper .container .formWrapper #form input:focus, #contact .wrapper .container .formWrapper #form textarea:focus {
+  outline: 1px solid #2a2a2a;
+}
+
+#contact .wrapper .container .formWrapper #form ::-webkit-input-placeholder {
+  color: #EEEEEE;
+}
+
+#contact .wrapper .container .formWrapper #form :-ms-input-placeholder {
+  color: #EEEEEE;
+}
+
+#contact .wrapper .container .formWrapper #form ::-ms-input-placeholder {
+  color: #EEEEEE;
+}
+
+#contact .wrapper .container .formWrapper #form ::placeholder {
+  color: #EEEEEE;
+}
+
+#contact .wrapper .container .formWrapper #form input {
+  width: 30%;
+}
+
+#contact .wrapper .container .formWrapper #form textarea {
+  width: 100%;
+}
+
+#contact .wrapper .container .formWrapper #form input[type="submit"] {
+  width: 30%;
+  margin: 0px auto;
+  color: #EEEEEE;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+#footer {
+  padding: 20px 0px;
+  color: #EEEEEE;
+}
+
+#footer .wrapper {
+  width: 80%;
+  margin: 0px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .wrapper p {
+  font-size: 20px;
+}
+
+#footer .wrapper .links ul li {
+  display: inline;
+}
+
+#footer .wrapper .links ul li a {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

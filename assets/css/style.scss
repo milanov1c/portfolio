@@ -12,10 +12,10 @@ body{
 }
 body::-webkit-scrollbar {
     width:12px;
-    background-color:$darkGrey; 
+    background-color:$grey; 
 }
 body::-webkit-scrollbar-thumb{
-   background-color:$grey; 
+   background-color:$darkGrey; 
 
 }
 a{
@@ -85,8 +85,11 @@ h2,h3{
 //mixin end
 
 //layout
+.beige{
+    color:$beige;
+}
 .red{
-    color:$red;
+    color: $red;
 }
 .shadow{
     height: inherit;
@@ -286,7 +289,7 @@ h2,h3{
             padding-top: calc((var(--height) - var(--font-size)) / 2);
             margin-top: 40px;
             text-align: left;
-            padding-left: 75px;
+            padding-left: 15px;
             background: rgb(215,35,35);
             background: linear-gradient(90deg, $red 0%, $red 51%, transparent 100%);
         }
@@ -294,21 +297,21 @@ h2,h3{
         
         #skill1{
             width: 90%;
-            clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+            //clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
         }
         #skill2{
             width: 80%;
-            clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+            //clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
            
         }
         #skill3{
             width: 70%;
-            clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
+            //clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
             
         }
         #skill4{
             width: 60%;
-            clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+            //clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
             
         }
       }
@@ -425,6 +428,145 @@ h2,h3{
             }
             
             
+        }
+    }
+}
+#testimonials{
+    background-color: $grey;
+    color: $beige;
+    padding: 50px 0px;
+    .wrapper{
+        @include center();
+        text-align: center;
+        h2{
+            @include headings();
+            &::before{
+                @include headingsBorder();
+            }
+        }
+        .container{
+            width: 100%;
+            padding: 20px 0px;
+            justify-content: space-between;
+            .testimonialBlock{
+                width: 22%;
+                margin-top: 100px;
+                padding: 50px 10px;
+                background-color: rgba($color: $greyBg, $alpha: 0.5);
+                position: relative;
+                img{
+                    width: 50%;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 0;
+                }
+                figcaption{
+                    margin: 20px 0px;
+                    font-size: 22px;
+                    &::before{
+                        @include headingsBorder;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+#contact{
+    background-color: $greyBg;
+    color: $beige;
+    padding: 50px 0px;
+    .wrapper{
+        @include center();
+        width: 90% !important;
+        text-align: center;
+        h2{
+            @include headings();
+            &::before{
+                @include headingsBorder();
+            }
+        }
+        .container{
+            width: 100%;
+            padding: 20px 0px;
+            flex-direction: column;
+            justify-content: center;
+            .contactInfo{
+                justify-content: space-between;
+                .infoBlock{
+                    width: 32%;
+                    h3{
+                        font-size: 30px;
+                        color: $beige;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                        letter-spacing: 5px;
+                    }
+                    i{
+                        font-size: 40px;
+                        padding-bottom: 30px;
+                        color: $red;
+                    }
+                    
+                }
+            }
+            .formWrapper{
+                margin-top: 50px;
+                #form{
+                    width: 90%;
+                    margin: 0px auto;
+                    justify-content: space-between;
+                    input, textarea{
+                        padding: 10px;
+                        border: none;
+                        border-bottom: 1px solid $grey;
+                        margin: 10px 0px;
+                        font-size: 16px;
+                        background-color: transparent;
+                        &:focus{
+                            outline: 1px solid $grey;
+                        }
+                    }
+                    ::placeholder{
+                    color: $beige;
+                    }
+                    
+                    input{
+                        width: 30%;
+                    }
+                    textarea{
+                        width: 100%;
+                    }
+                    input[type="submit"]{
+                        width: 30%;
+                        margin: 0px auto;
+                        color: $beige;
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+#footer{
+    padding: 20px 0px;
+    color: $beige;
+    .wrapper{
+        @include center();
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 20px;
+        }
+        .links ul li{
+            display: inline;
+            a{
+            padding-left: 15px;
+            }
         }
     }
 }
