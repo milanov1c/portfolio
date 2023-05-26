@@ -1,7 +1,0 @@
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-css3-alt"></i>
-<i class="fa-brands fa-js"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-solid fa-wand-magic-sparkles"></i>
-
-As a young front-end developer, I've crafted impressive projects using HTML, CSS, and Sass. My websites feature clean code, stunning designs, and responsive layouts. Leveraging Sass, I streamline development while ensuring a seamless user experience. Excited to grow my portfolio, I continue to create innovative and visually appealing web solutions.

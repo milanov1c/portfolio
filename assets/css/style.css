@@ -11,6 +11,15 @@ body {
           box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #0b090a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2a2a2a;
+}
+
 a {
   text-decoration: none;
   color: #EEEEEE;
@@ -484,10 +493,14 @@ h2, h3 {
   background-color: #D72323;
 }
 
-#projects .wrapper p {
+#projects .wrapper .projectsText1 {
   font-size: 18px;
   line-height: 1.4;
   padding: 0px 100px;
+}
+
+#projects .wrapper .projectsText2 {
+  display: none;
 }
 
 #projects .wrapper .container {
@@ -510,8 +523,8 @@ h2, h3 {
 }
 
 #projects .wrapper .container figure img:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #projects .wrapper .container figure figcaption {
