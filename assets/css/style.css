@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #0b090a;
+  background-color: #D72323;
 }
 
 a {
@@ -37,6 +37,54 @@ ul {
 
 h2, h3 {
   font-weight: normal;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes arrowSlide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes arrowSlide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .beige {
@@ -82,6 +130,8 @@ h2, h3 {
   font-size: 70px;
   color: #D72323;
   text-shadow: 0px 0px 25px #D72323;
+  -webkit-animation: arrowSlide 2s alternate infinite;
+          animation: arrowSlide 2s alternate infinite;
 }
 
 .container {
@@ -153,6 +203,8 @@ h2, h3 {
   padding-top: 250px;
   font-size: 50px;
   font-weight: normal;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
 }
 
 #cover h2 {
@@ -161,6 +213,8 @@ h2, h3 {
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 5px;
+  -webkit-animation: appear 1s;
+          animation: appear 1s;
 }
 
 #about {
