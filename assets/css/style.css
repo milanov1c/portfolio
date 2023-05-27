@@ -1256,6 +1256,10 @@ h2, h3 {
 }
 
 @media screen and (max-width: 481px) {
+  #header {
+    width: 100%;
+    left: 0%;
+  }
   #cover h1 {
     font-size: 30px;
     padding-top: 200px;
@@ -1337,8 +1341,6 @@ h2, h3 {
 
 @media screen and (max-width: 426px) {
   #header {
-    width: 94%;
-    padding: 10% 3%;
     position: relative;
     left: 0%;
     background-color: #0b090a;
@@ -1420,7 +1422,6 @@ h2, h3 {
 
 @media screen and (max-width: 376px) {
   #header {
-    padding: 3% 3% 0% 3%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1446,9 +1447,6 @@ h2, h3 {
     text-align: center;
     font-size: 16px;
     padding: 2px 7px;
-  }
-  #cover .shadow {
-    background-color: rgba(0, 0, 0, 0);
   }
   #cover h1 {
     font-size: 24px;
