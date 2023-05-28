@@ -384,6 +384,11 @@
     display: inline-block;
     padding: 0px 40px;
   }
+  #offers .wrapper .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #offers .wrapper .container .offer h3 {
     font-size: 26px;
   }
@@ -401,6 +406,9 @@
   }
   #testimonials .wrapper .container .testimonialBlock img {
     bottom: 50%;
+  }
+  #testimonials .wrapper .container .testimonialBlock p {
+    font-size: 13px;
   }
 }
 

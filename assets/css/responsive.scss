@@ -482,6 +482,7 @@
              padding: 0px 40px;
          }
          .container{
+             justify-content: center;
              .offer{
                  h3{
                      font-size: 26px;
@@ -514,6 +515,9 @@
             .testimonialBlock{
                 img{
                     bottom: 50%;
+                }
+                p{
+                    font-size: 13px;
                 }
             }
         }
