@@ -6,6 +6,9 @@
     font-size: 22px;
     padding: 0px 7px;
   }
+  #cover {
+    height: 750px;
+  }
 }
 
 @media screen and (max-width: 1025px) {
@@ -19,9 +22,11 @@
     font-size: 18px;
     padding: 0px 4px;
   }
+  #cover {
+    height: 650px;
+  }
   #cover h1 {
-    padding-top: 200px;
-    font-size: 40px;
+    font-size: 45px;
   }
   #cover h2 {
     font-size: 20px;
@@ -56,7 +61,7 @@
     font-size: 16px;
   }
   #cover {
-    height: 80vh;
+    height: 625px;
   }
   #about .wrapper h2 {
     font-size: 47px;
@@ -110,11 +115,11 @@
     padding: 0px 3px;
   }
   #cover {
-    height: 75vh;
+    height: 600px;
   }
   #cover h1 {
-    padding-top: 150px;
-    font-size: 36px;
+    padding-top: 200px;
+    font-size: 40px;
   }
   #cover h2 {
     font-size: 18px;
@@ -246,6 +251,9 @@
     font-size: 20px;
     padding: 0px 7px;
   }
+  #cover h1 {
+    padding-top: 250px;
+  }
   #about .wrapper {
     width: 85%;
   }
@@ -334,11 +342,12 @@
 }
 
 @media screen and (max-width: 481px) {
+  #cover {
+    height: 550px;
+  }
   #cover h1 {
     font-size: 30px;
-    padding-top: 200px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 220px;
   }
   #cover h2 {
     padding: 10px;
@@ -414,11 +423,8 @@
 
 @media screen and (max-width: 426px) {
   #header {
-    width: 94%;
-    padding: 10% 3%;
-    position: relative;
+    width: 100%;
     left: 0%;
-    background-color: #0b090a;
   }
   #header #nav {
     width: 100%;
@@ -427,13 +433,8 @@
     font-size: 18px;
     padding: 0px 4px;
   }
-  #cover {
-    height: 60vh;
-    background-color: #0b090a;
-  }
   #cover h1 {
     font-size: 28px;
-    padding-top: 75px;
   }
   #cover h2 {
     font-size: 14px;
@@ -494,7 +495,6 @@
 
 @media screen and (max-width: 376px) {
   #header {
-    padding: 3% 3% 0% 3%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -521,11 +521,9 @@
     font-size: 16px;
     padding: 2px 7px;
   }
-  #cover .shadow {
-    background-color: rgba(0, 0, 0, 0);
-  }
   #cover h1 {
     font-size: 24px;
+    padding-top: 250px;
   }
   #cover h2 {
     font-size: 12px;
@@ -594,6 +592,12 @@
 }
 
 @media screen and (max-width: 321px) {
+  #cover {
+    height: 500px;
+  }
+  #cover h1 {
+    font-size: 22px;
+  }
   #about .wrapper {
     width: 95%;
   }
