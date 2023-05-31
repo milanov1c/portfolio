@@ -16,7 +16,7 @@
     width: 47%;
   }
   #header #nav {
-    width: 50%;
+    width: 52%;
   }
   #header #nav ul li {
     font-size: 18px;
@@ -49,7 +49,7 @@
     width: 95%;
   }
   #testimonials .wrapper {
-    width: 90%;
+    width: 92%;
   }
   #testimonials .wrapper .container .testimonialBlock img {
     bottom: 50%;
@@ -410,14 +410,14 @@
   #projects .wrapper .container .projectBlock figcaption {
     font-size: 26px;
   }
-  #testimonials .wrapper h2 {
-    font-size: 32px;
-  }
   #testimonials .wrapper .container .testimonialBlock img {
     bottom: 50%;
   }
   #testimonials .wrapper .container .testimonialBlock p {
     font-size: 13px;
+  }
+  #contact .wrapper h2 {
+    font-size: 32px;
   }
 }
 
@@ -443,7 +443,7 @@
     width: 95%;
   }
   #about .wrapper h2 {
-    font-size: 34px;
+    font-size: 30px;
   }
   #about .wrapper .aboutText2 {
     font-size: 14px;
@@ -456,7 +456,7 @@
         justify-content: space-around;
   }
   #skills .wrapper h2 {
-    letter-spacing: 4px;
+    font-size: 30px;
   }
   #skills .wrapper .skillsText1 {
     padding: 0px 20px;
@@ -464,13 +464,13 @@
   #skills .wrapper .container .skillBar {
     margin-top: 20px;
   }
+  #offers .wrapper h2 {
+    font-size: 30px;
+  }
   #offers .wrapper .container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  #testimonials .wrapper h2 {
-    letter-spacing: 4px;
   }
   #testimonials .wrapper .container {
     -webkit-box-pack: center;
@@ -482,6 +482,9 @@
   }
   #testimonials .wrapper .container .testimonialBlock img {
     bottom: 35%;
+  }
+  #contact .wrapper h2 {
+    font-size: 30px;
   }
   #footer .wrapper {
     -webkit-box-pack: center;
@@ -532,7 +535,7 @@
     width: 95%;
   }
   #about .wrapper h2 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 2px;
   }
   #about .wrapper .aboutText2 {
@@ -540,7 +543,9 @@
     padding: 0px 20px;
   }
   #about .wrapper .container {
-    margin: 30px auto;
+    padding: 0px;
+    margin: 0px auto;
+    margin-top: 50px;
     width: 70%;
   }
   #about .wrapper .container #aboutAuthor {
@@ -568,22 +573,22 @@
     width: 40%;
   }
   #skills .wrapper h2 {
+    font-size: 28px;
     letter-spacing: 2px;
-    font-size: 30px;
   }
   #offers .wrapper h2 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 2px;
   }
   #projects .wrapper h2 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 2px;
   }
   #projects .wrapper .container .projectBlock figcaption {
     font-size: 24px;
   }
   #testimonials .wrapper h2 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 2px;
   }
   #testimonials .wrapper .container .testimonialBlock img {
@@ -602,8 +607,7 @@
     width: 95%;
   }
   #about .wrapper h2 {
-    font-size: 28px;
-    letter-spacing: 2px;
+    font-size: 24px;
   }
   #about .wrapper .aboutText2 {
     font-size: 14px;
@@ -640,24 +644,21 @@
     width: 40%;
   }
   #skills .wrapper h2 {
-    letter-spacing: 2px;
-    font-size: 28px;
+    font-size: 24px;
   }
   #skills .wrapper .skillsText1 {
     font-size: 14px;
     padding: 0px 10px;
   }
   #offers .wrapper h2 {
-    letter-spacing: 2px;
-    font-size: 26px;
+    font-size: 24px;
   }
   #offers .wrapper .offersText2 {
     font-size: 14px;
     padding: 0px 10px;
   }
   #projects .wrapper h2 {
-    font-size: 26px;
-    letter-spacing: 2px;
+    font-size: 24px;
   }
   #projects .wrapper .projectsText2 {
     font-size: 14px;
@@ -667,11 +668,13 @@
     width: 85%;
   }
   #testimonials .wrapper h2 {
-    font-size: 26px;
-    padding: 0px;
+    font-size: 24px;
   }
   #testimonials .wrapper .container .testimonialBlock img {
     bottom: 45%;
+  }
+  #contact .wrapper h2 {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

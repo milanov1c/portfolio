@@ -20,7 +20,7 @@
             width: 47%;
         }
         #nav{
-            width: 50%;
+            width: 52%;
         }
         #nav ul li{
             font-size: 18px;
@@ -61,7 +61,7 @@
     }
     #testimonials{
         .wrapper{
-            width: 90%;
+            width: 92%;
                 .container{
                     .testimonialBlock{
                         img{
@@ -515,9 +515,6 @@
 }
 #testimonials{
     .wrapper{
-        h2{
-            font-size: 32px;
-        }
         .container{
             .testimonialBlock{
                 img{
@@ -530,6 +527,13 @@
         }
     }
     
+}
+#contact{
+    .wrapper{
+        h2{
+            font-size: 32px;
+        }
+    }
 }
 }   
 @media screen and (max-width: 426px){
@@ -557,7 +561,7 @@
         .wrapper{
             width: 95%;
             h2{
-                font-size: 34px;
+                font-size: 30px;
             }
            
             .aboutText2{
@@ -574,7 +578,7 @@
     #skills{
         .wrapper{
             h2{
-                letter-spacing: 4px;
+                font-size: 30px;
             }
             .skillsText1{
                 padding: 0px 20px;
@@ -588,6 +592,9 @@
     }
     #offers{
         .wrapper{
+            h2{
+                font-size: 30px;
+            }
             .container{
                 justify-content:center;
             }
@@ -595,9 +602,6 @@
     }
     #testimonials{
         .wrapper{
-            h2{
-                letter-spacing: 4px;
-            }
             .container{
                 justify-content: center;
                 .testimonialBlock{
@@ -606,6 +610,13 @@
                         bottom: 35%;
                     }
                 }
+            }
+        }
+    }
+    #contact{
+        .wrapper{
+            h2{
+                font-size: 30px;
             }
         }
     }
@@ -653,7 +664,7 @@
         .wrapper{
             width: 95%;
             h2{
-                font-size: 30px;
+                font-size: 28px;
                 letter-spacing: 2px;
             }
            
@@ -662,7 +673,9 @@
                 padding: 0px 20px;
             }
             .container{
-                margin: 30px auto;
+                padding: 0px;
+                margin: 0px auto;
+                margin-top: 50px;
                 width: 70%;
                 #aboutAuthor{
                     width: 80%;
@@ -693,15 +706,15 @@
     #skills{
         .wrapper{
             h2{
+                font-size: 28px;
                 letter-spacing: 2px;
-                font-size: 30px;
             }
         }
     }
     #offers{
         .wrapper{
             h2{
-                font-size: 30px;
+                font-size: 28px;
                 letter-spacing: 2px;
             }
         }
@@ -709,7 +722,7 @@
     #projects{
         .wrapper{
             h2{
-                font-size: 30px;
+                font-size: 28px;
                 letter-spacing: 2px;
             }
             .container{
@@ -724,7 +737,7 @@
     #testimonials{
         .wrapper{
             h2{
-                font-size: 30px;
+                font-size: 28px;
                 letter-spacing: 2px;
             }
             .container{
@@ -748,8 +761,7 @@
         .wrapper{
             width: 95%;
             h2{
-                font-size: 28px;
-                letter-spacing: 2px;
+                font-size: 24px;
             }
            
             .aboutText2{
@@ -791,8 +803,7 @@
     #skills{
         .wrapper{
             h2{
-                letter-spacing: 2px;
-                font-size: 28px;
+                font-size: 24px;
             }
             .skillsText1{
                 font-size: 14px;
@@ -803,8 +814,7 @@
     #offers{
         .wrapper{
             h2{
-                letter-spacing: 2px ;
-                font-size: 26px;
+                font-size: 24px;
             }
             .offersText2{
                 font-size: 14px;
@@ -815,8 +825,7 @@
     #projects{
         .wrapper{
             h2{
-                font-size: 26px;
-                letter-spacing: 2px;
+                font-size: 24px;
             }
             .projectsText2{
                 font-size: 14px;
@@ -832,8 +841,7 @@
     #testimonials{
         .wrapper{
             h2{
-                font-size: 26px;
-                padding: 0px;
+                font-size: 24px;
             }
             .container{
                 .testimonialBlock{
@@ -841,6 +849,13 @@
                         bottom:45%;
                     }
                 }
+            }
+        }
+    }
+    #contact{
+        .wrapper{
+            h2{
+                font-size: 24px;
             }
         }
     }
