@@ -428,6 +428,29 @@
         }
     }
 }
+@media screen and (max-width: 536px){
+    #offers{
+        .wrapper{
+            .container{
+                justify-content: center;
+            }
+        }
+    }
+    #testimonials{
+        .wrapper{
+            .container{
+                justify-content: center;
+                .testimonialBlock{
+                    width: 80%;
+                    img{
+                        bottom:20%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 481px){
    #cover{
        height: 550px;
@@ -518,10 +541,10 @@
         .container{
             .testimonialBlock{
                 img{
-                    bottom: 50%;
+                    bottom: 25%;
                 }
                 p{
-                    font-size: 13px;
+                    font-size: 12px;
                 }
             }
         }
@@ -600,19 +623,7 @@
             }
         }
     }
-    #testimonials{
-        .wrapper{
-            .container{
-                justify-content: center;
-                .testimonialBlock{
-                    width: 80%;
-                    img{
-                        bottom: 35%;
-                    }
-                }
-            }
-        }
-    }
+   
     #contact{
         .wrapper{
             h2{

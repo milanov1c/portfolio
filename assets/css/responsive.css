@@ -341,6 +341,25 @@
   }
 }
 
+@media screen and (max-width: 536px) {
+  #offers .wrapper .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #testimonials .wrapper .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #testimonials .wrapper .container .testimonialBlock {
+    width: 80%;
+  }
+  #testimonials .wrapper .container .testimonialBlock img {
+    bottom: 20%;
+  }
+}
+
 @media screen and (max-width: 481px) {
   #cover {
     height: 550px;
@@ -411,10 +430,10 @@
     font-size: 26px;
   }
   #testimonials .wrapper .container .testimonialBlock img {
-    bottom: 50%;
+    bottom: 25%;
   }
   #testimonials .wrapper .container .testimonialBlock p {
-    font-size: 13px;
+    font-size: 12px;
   }
   #contact .wrapper h2 {
     font-size: 32px;
@@ -471,17 +490,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  #testimonials .wrapper .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #testimonials .wrapper .container .testimonialBlock {
-    width: 80%;
-  }
-  #testimonials .wrapper .container .testimonialBlock img {
-    bottom: 35%;
   }
   #contact .wrapper h2 {
     font-size: 30px;
